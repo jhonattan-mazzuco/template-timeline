@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,700' rel='stylesheet' type='text/css'>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Poppins', trebuchet, sans-serif;
+            color: #7f7f7f;
+            font-weight: bold;
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #f3416b;
+            top: 0;
+            bottom: 0;
+            left: 15%;
+        }
+
+        .container {
+            padding: 5px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        .container::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: 28%;
+            background-color: #f3416b;
+            top: 15px;
+            border-radius: 50%;
+        }
+
+        .left {
+            width: 20%;
+            padding-top: 10px;
+            display: inline-block;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .right {
+            left: 25%;
+        }
+
+        .content {
+            top: -45px;
+            padding: 0 15px;
+            position: relative;
+        }
+
+        .content ul {
+            list-style: none;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+<div class="timeline">
+    <div class="container">
+        <div class="left">
+            22/01
+        </div>
+        <div class="content right">
+            <ul>
+                <li>Obrigação 1</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left">
+            23/01
+        </div>
+        <div class="content right">
+            <ul style="list-style: none">
+                <li>Obrigação 1</li>
+                <li>Obrigação 2</li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
